@@ -1,0 +1,64 @@
+.container{
+	@include flexbox();
+	@include flex-direction(column);
+	font-family: "Microsoft YaHei";
+	width:100%;
+	height:100%;
+	.m-wrapper{
+		@include flexbox();
+		@include flex-direction(column);
+		@include flex(1);
+		width:100%;
+		height:100%;
+		background:#E9E9E9;
+		position: relative;
+		//overflow:hidden;
+	}
+	footer{
+		width:100%;
+		height:.44rem;
+		//background:#FFFFFF;
+		ul{
+			@include flexbox();
+			width:100%;
+			height:100%;
+			@include border(1px 0 0 0,#333);
+			@include box-sizing();
+			padding-top: .02rem;
+			background:#FFFFFF;
+			li{
+				@include flex(1);
+				text-align: center;
+				color:#666;
+				position:relative;
+
+				&.active{
+					color: #0dc143;
+				}
+				&:nth-child(3){
+					i{
+						width: .5rem;
+						height: .5rem;
+						background: #fff;
+						margin-top: -.08rem;
+						font-size:.3rem;
+						z-index: 1001;
+						left:50%;
+						position:absolute!important;
+						@include border(1px,#00f,solid,50%);
+						@include transform(translate(-50%,0));
+					}
+				};
+				b{
+					display: block;
+					font-size:.14rem;
+					font-weight:normal;
+					margin-top:-.05rem;	
+				}
+				i{
+					font-size: .16rem;
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,64 @@
+<div class="m-home">
+	<header>
+		<ul>
+			<li class="yo-ico">&#xe628;</li>
+			<li>
+				<ul id="title">
+					<li class="active">热点</li><li>关注</li>
+				</ul>
+			</li>
+			<li class="yo-ico">&#xe671;</li>
+		</ul>
+	</header>
+	<div class="swiper-home">
+		<div class="swiper-container" id="swiper-home">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<nav>
+		               <ul id="nav-title">
+		                  <li class="active">足球现场</li>
+		                  <li>足球生活</li>
+		                  <li>足球美女</li>
+		               </ul>
+			        </nav>			
+					<div class="swiper-container" id="swiper-content">
+				  		<div class="swiper-wrapper">
+				    		<div class="swiper-slide">
+								<div id="scroller" spa-widget="scroll" data-scroll-id="homeListScroll">
+									<div class="home-scroll">										
+										<div class="head">
+											<img src="/footballApps/images/arrow.png" alt="">
+											<span>下拉刷新</span>
+										</div>
+										<ul ms-repeat-obj="livedata">
+											<li ms-attr-data-id="obj[0].id" action-type="goto.detail">
+												<img ms-src="obj[0].img" alt="">
+												<b ms-text="obj[0].title"></b>
+											</li>
+											<li></li>
+											<li ms-attr-data-id="obj[1].id" ms-class-hide="!obj[1]" action-type="goto.detail">
+												<img ms-src="obj[1].img" alt="">
+												<b ms-text="obj[1].title"></b>
+											</li>
+										</ul>
+										<div class="foot">
+											<img src="/footballApps/images/arrow.png" alt="">
+											<span>上拉加载</span>
+										</div>									
+									</div>	
+								</div>
+				    		</div>
+				    		<div class="swiper-slide">足球生活</div>
+				    		<div class="swiper-slide">足球美女</div>
+				  		</div>
+					</div>
+				</div>
+				<div class="swiper-slide">关注....</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
